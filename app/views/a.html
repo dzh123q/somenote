@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="contact-form">
+		<div class="profile-pic" style="left:31.5%">
+			<img src="images/1222.png" alt="User Icon" />
+		</div>
+		<div class="signin">
+
+			<input type="text" class="user" placeholder="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" ng-model="data.username" />
+			<input type="password" class="pass" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" ng-model="data.password" />
+			<p>
+				<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1" ng-model="btn" ng-checked="btn">Seven days without login
+ 				</label>
+			</p>
+
+		</div>
+
+		<input type="submit" value="Login" ng-click="denglu()" />
+		<input type="submit" value="Register" ui-sref="b" />
+	</div>
+</div>
